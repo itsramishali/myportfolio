@@ -33,7 +33,7 @@ const Navbar = () => {
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
-      <d className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to='/'
           className='flex items-center gap-2'
@@ -97,7 +97,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-      </d>
+      </div>
       <div className="pl-2.5 justify-end ">
                   <a href="https://www.linkedin.com/in/ramish-ali">
                       <img width="34" height="34" src="https://img.icons8.com/external-those-icons-flat-those-icons/24/000000/external-LinkedIn-Logo-social-media-those-icons-flat-those-icons.png" alt="external-LinkedIn-Logo-social-media-those-icons-flat-those-icons"/>
