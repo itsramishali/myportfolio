@@ -6,6 +6,8 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const formRef = useRef();
@@ -43,6 +45,16 @@ const Contact = () => {
             name: "",
             email: "",
             message: "",
+          });
+          // window.alert("Thank you for your message! We will get back to you as soon as possible.");
+          toast.success("Thank you for your message! We will get back to you as soon as possible.", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
           });
         },
         (error) => {
